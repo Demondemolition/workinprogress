@@ -1,0 +1,35 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 350,
+    "height": 500,
+    "title": "Effect of GDP and Social Support on Suicide",
+    "data": {
+    "url": "final.csv"
+    },
+    "mark": "circle",
+    "encoding": {
+    "x": {
+    "field": "Social support",
+    "type": "quantitative",
+    "title": "Social support",
+    "scale": {"domain": [0.30, 1]}
+    },
+    "y": {
+    "field": "GDP PPP per capita",
+    "type": "quantitative",
+    "title": "GDP",
+    "axis": {"tickCount": 4},
+    "scale": {"type": "log", "domain": [100, 1000000]}
+    },
+    "color": {
+    "field": "Deaths",
+    "type": "quantitative",
+    "scale": {"type": "threshold","domain": [5,10,15,20,25,30], "scheme": "reds"}
+    },
+    "size": {"field": "Deaths", "type": "quantitative", "scale": {
+        "type": "threshold",
+                "domain": [10,20,30,40,50]
+    }
+    }
+    }
+   }

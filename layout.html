@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Suicide rates through time</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css" />
+
+    <link rel="stylesheet" href="layout.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+    <script src="map.js"></script>
+    <script src="bubble.js"></script>
+
+</head>
+
+<body>
+    <header> 
+        <h1>Suicide rates through time </h1>
+    </header>
+    <div class="container">
+        <div class="toppane">
+            <div id="map"></div>
+        </div>
+        <div class="leftpane">
+          <h2>The Data</h2> <h4><ul><li>Age-standardization means that all countries have the same distribution of ages</li><br></br><li>This weighting was set by the World Health Organization </li><br></br><li> Different country = different age distributions </li><br></br><li>This is important because different ages have different rates of suicide</li></ul></h4></div>
+        <div class="middlepane">
+            <div id="bubble"></div>
+        </div>
+        <div class="rightpane">
+          <h2>Results</h2><h4><ul><li>Suicide occurs amongst poor and rich countries</li><br></br><li>Very wealthy countries are less affected</li><br></br><li>Even countries with good social support networks (judged by WHO) are deeply effected</li><br></br><li>Interational Issue </li><br></br></ul></h4></div>
+      </div>
+</body>
+
+</html>
